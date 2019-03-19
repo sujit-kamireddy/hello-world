@@ -1,0 +1,14 @@
+# Syntax reference https://kubernetes.io/docs/concepts/configuration/overview/
+apiVersion: v1
+kind: Service
+metadata:
+  name: helloworld-external
+spec:
+  type: LoadBalancer
+  selector:
+    app: helloworld
+  ports:
+  - 
+    name: http
+    port: 4000
+    targetPort: 8080

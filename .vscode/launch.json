@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "podSelector": {
+        "app": "helloworld"
+      },
+      "type": "cloudcode",
+      "request": "attach",
+      "localRoot": "${workspaceFolder}\\src\\helloworld",
+      "language": "Node",
+      "remoteRoot": "/app",
+      "name": "helloworld-server",
+      "debugPort": 9229
+    }
+  ]
+}

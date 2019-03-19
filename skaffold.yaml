@@ -1,0 +1,12 @@
+apiVersion: skaffold/v1alpha5
+kind: Config
+build:
+  tagPolicy:
+    sha256: {}
+  artifacts:
+    - context: src/helloworld
+      image: helloworld-image
+deploy:
+  kubectl:
+    manifests:
+      - kubernetes-manifests/**
